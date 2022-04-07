@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">	
+
+	<bean id="student2" class="com.javagyeongmin.ex.Student">
+		<constructor-arg>
+			<value>이순신</value>
+		</constructor-arg>
+		<constructor-arg>
+			<value>50살</value>
+		</constructor-arg>
+		<constructor-arg>
+			<list>
+				<value>활쏘기</value>
+				<value>말타기</value>
+				<value>일기쓰기</value>
+			</list>			
+		</constructor-arg>
+		
+		<property name="height">
+			<value>185</value>
+		</property>
+		<property name="weight">
+			<value>90</value>
+		</property>	
+	</bean>
+	
+	<bean id="family" class="com.javagyeongmin.ex.Family">
+		<constructor-arg>
+			<value>순신아버지</value>
+		</constructor-arg>
+		<constructor-arg>
+			<value>순신어머니</value>
+		</constructor-arg>
+		
+		<property name="sister">
+			<value>순신여동생</value>
+		</property>		
+		<property name="brother">
+			<value>순신남동생</value>
+		</property>
+	
+	</bean>
+	
+	
+</beans>
+	
+
